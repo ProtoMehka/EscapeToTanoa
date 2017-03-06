@@ -25,11 +25,11 @@ class Life_Client_Core {
         class survival {};
         class welcomeNotification {};
     };
-	
-	class Adac {         
-		file = "core\adac";  
-		class adacLoadout {};  
-		class adacMarkers {};  
+
+	class Adac {
+		file = "core\adac";
+		class adacLoadout {};
+		class adacMarkers {};
 	};
 
     class Actions {
@@ -68,6 +68,7 @@ class Life_Client_Core {
         class surrender {};
         class ticketAction {};
         class unrestrain {};
+        class blackjack {};
     };
 
     class Admin {
@@ -170,16 +171,27 @@ class Life_Client_Core {
         class vehicleGarage {};
         class wireTransfer {};
     };
-	
-	class CopPlaceables	{  
-		file = "core\cop\placeables";  
-		class placeablesInit {};  
-		class placeablesMenu {};  
-		class placeablesRemoveAll {};  
-		class placeablePlace {};  
-		class placeableCancel {};  
-		class placeablesPlaceComplete {};  
-	};  
+
+    class DynMarket
+  {
+      file = "core\DynMarket";
+      class bought {};
+      class update {};
+      class DisplayPrices {};
+      class LoadIntoListbox {};
+      class ForcePrice {};
+      class DYNMARKET_getPrice {};
+  }; 
+
+	class CopPlaceables	{
+		file = "core\cop\placeables";
+		class placeablesInit {};
+		class placeablesMenu {};
+		class placeablesRemoveAll {};
+		class placeablePlace {};
+		class placeableCancel {};
+		class placeablesPlaceComplete {};
+	};
 
     class Functions {
         file = "core\functions";
@@ -282,6 +294,7 @@ class Life_Client_Core {
         class placestorage {};
         class spikeStrip {};
         class storageBox {};
+        class gpsTracker {};
     };
 
     class Medical_System {
@@ -384,7 +397,7 @@ class Life_Client_Core {
         class vehTakeItem {};
         class vInteractionMenu {};
     };
-	
+
 	class Banking {
 		file = "core\banking";
 		class bankingMenu {};

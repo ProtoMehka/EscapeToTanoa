@@ -6080,6 +6080,10 @@
             <Portuguese>Maconha não Processada</Portuguese>
             <Polish>Konopie</Polish>
         </Key>
+    <Key ID="STR_Item_GPSTracker">
+            <Original>GPS Tracker</Original>
+            <French>Balise GPS</French>
+    </Key>
         <Key ID="STR_Item_Apple">
             <Original>Apple</Original>
             <Czech>Jablko</Czech>

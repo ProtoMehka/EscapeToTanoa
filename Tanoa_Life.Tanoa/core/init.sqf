@@ -79,8 +79,8 @@ switch (playerSide) do {
     case independent: {
         life_paycheck = LIFE_SETTINGS(getNumber,"paycheck_med");
     };
-	case east: {  
-		life_paycheck = LIFE_SETTINGS(getNumber,"paycheck_adac");  
+	case east: {
+		life_paycheck = LIFE_SETTINGS(getNumber,"paycheck_adac");
 	};
 };
 
@@ -99,10 +99,10 @@ switch (playerSide) do {
         _handle = [] spawn life_fnc_initMedic;
         waitUntil {scriptDone _handle};
     };
-	case east: {  
-		//Initialize Adac and blah  
-		_handle = [] spawn life_fnc_initAdac;          
-		waitUntil {scriptDone _handle};      
+	case east: {
+		//Initialize Adac and blah
+		_handle = [] spawn life_fnc_initAdac;
+		waitUntil {scriptDone _handle};
 	};
 };
 
@@ -196,6 +196,9 @@ life_hideoutBuildings = [];
     life_hideoutBuildings pushBack _building;
     false
 } count ["gang_area_1","gang_area_2","gang_area_3"];
+
+DYNAMICMARKET_boughtItems = [];
+[[getPlayerUID player],"TON_fnc_playerLogged",false,false] spawn life_fnc_MP;
 
 diag_log "----------------------------------------------------------------------------------------------------";
 diag_log format ["               End of Altis Life Client Init :: Total Execution Time %1 seconds ",(diag_tickTime) - _timeStamp];

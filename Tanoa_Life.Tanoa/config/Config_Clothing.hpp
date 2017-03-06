@@ -350,7 +350,6 @@ class Clothing {
             { "H_HelmetCrew_O_ghex", "", 1500, "" },
             { "H_Helmet_SpecO_ghex_F", "", 2500, "" },
             { "H_HelmetLeader_O_ghex_F", "", 3000, "" },
-            { "H_HelmetO_ViperSP_ghex_F", "", 5000, "" },
             { "Masque_Alien1", "", 150, "" },
             { "Masque_Anonymous", "", 150, "" },
             { "Masque_Chains", "", 150, "" },

@@ -275,16 +275,26 @@ class playerSettings {
             w = (6.25 / 40);
             h = (1 / 25);
         };
-		
-		class ButtonPlaceables: Life_RscButtonMenu {  
-			idc = 20003;  
-			text = "Placeables";  
-			onButtonClick = "[] spawn life_fnc_placeablesMenu; closeDialog 0;";  
-			//x = 0.26 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));  
-			x = 0.42 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));  
-			y = 0.801;  
-			w = (6.25 / 40);  
-			h = (1 / 25);  
-		};  
+
+		    class ButtonPlaceables: Life_RscButtonMenu {
+			       idc = 20003;
+			       text = "Placeables";
+			       onButtonClick = "[] spawn life_fnc_placeablesMenu; closeDialog 0;";
+			       //x = 0.26 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
+			       x = 0.42 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
+			       y = 0.801;
+			       w = (6.25 / 40);
+			       h = (1 / 25);
+		    };
+
+        class ButtonMarket : Life_RscButtonMenu {
+            idc = -1;
+            text = "Bourse";
+            onButtonClick = "createDialog ""life_dynmarket_prices"";";
+            x = 0.26 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
+            y = 0.805;
+            w = (6.25 / 40);
+            h = (1 / 25);
+        };  
     };
 };
