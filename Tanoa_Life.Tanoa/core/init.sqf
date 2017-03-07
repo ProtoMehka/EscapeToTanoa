@@ -79,8 +79,8 @@ switch (playerSide) do {
     case independent: {
         life_paycheck = LIFE_SETTINGS(getNumber,"paycheck_med");
     };
-	case east: {  
-		life_paycheck = LIFE_SETTINGS(getNumber,"paycheck_adac");  
+	case east: {
+		life_paycheck = LIFE_SETTINGS(getNumber,"paycheck_adac");
 	};
 };
 
@@ -99,10 +99,10 @@ switch (playerSide) do {
         _handle = [] spawn life_fnc_initMedic;
         waitUntil {scriptDone _handle};
     };
-	case east: {  
-		//Initialize Adac and blah  
-		_handle = [] spawn life_fnc_initAdac;          
-		waitUntil {scriptDone _handle};      
+	case east: {
+		//Initialize Adac and blah
+		_handle = [] spawn life_fnc_initAdac;
+		waitUntil {scriptDone _handle};
 	};
 };
 
@@ -136,7 +136,7 @@ player addRating 99999999;
 [] call life_fnc_hudSetup;
 
 /* Set up frame-by-frame handlers */
-LIFE_ID_PlayerTags = ["LIFE_PlayerTags","onEachFrame","life_fnc_playerTags"] call BIS_fnc_addStackedEventHandler;
+//LIFE_ID_PlayerTags = ["LIFE_PlayerTags","onEachFrame","life_fnc_playerTags"] call BIS_fnc_addStackedEventHandler;
 LIFE_ID_RevealObjects = ["LIFE_RevealObjects","onEachFrame","life_fnc_revealObjects"] call BIS_fnc_addStackedEventHandler;
 
 player setVariable ["steam64ID",getPlayerUID player];
