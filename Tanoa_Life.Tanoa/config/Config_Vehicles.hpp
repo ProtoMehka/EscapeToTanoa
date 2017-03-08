@@ -73,7 +73,6 @@ class CarShops {
         side = "civ";
         conditions = "";
         vehicles[] = {
-            { "O_Truck_02_Ammo_F", "" },
             { "shounka_a3_dafxf_euro6_f", "" },
             { "shounka_a3_mantgs_f", "" },
             { "shounka_a3_renaultmagnum_f", "" }
@@ -108,14 +107,34 @@ class CarShops {
         side = "civ";
         conditions = "";
         vehicles[] = {
-            { "Mrshounka_bmwm6_noir", "" },
+            { "O_T_Quadbike_01_ghex_F", "" },
+            { "I_Quadbike_01_F", "" },
+            { "O_Quadbike_01_F", "" },
+            { "O_T_LSV_02_unarmed_F", "" },
+            { "I_Truck_02_transport_F", "" },
+            { "O_Truck_02_transport_F", "" },
+            { "I_Truck_02_covered_F", "" },
+            { "O_Truck_02_covered_F", "" },
+            { "I_Truck_02_ammo_F", "" },
+            { "O_Truck_02_Ammo_F", "" },
             { "Mrshounka_c36_2015_mat_n", "" },
             { "shounka_clk_noir", "" },
+            { "O_T_Truck_03_fuel_ghex_F", "" },
+            { "O_Truck_03_fuel_F", "" },
+            { "O_T_Truck_03_device_ghex_F", "" },
+            { "O_Truck_03_device_F", "" },
+            { "O_T_Truck_03_ammo_ghex_F", "" },
+            { "O_Truck_03_ammo_F", "" },
+            { "O_T_Truck_03_transport_ghex_F", "" },
+            { "O_Truck_03_transport_F", "" },
+            { "O_T_Truck_03_covered_ghex_F", "" },
+            { "O_Truck_03_covered_F", "" },
             { "O_MRAP_02_F", "" },
+            { "O_T_MRAP_02_ghex_F", "" },
             { "DAR_4X4", "" },
             { "DAR_MK27", "" },
-            { "DAR_MK23", "" },
-            { "DAR_LHS_16O_MRAP_02_F", "" },
+            { "DAR_MK27T", "" },
+            { "DAR_CHS_16", "" },
             { "Mrshounka_veneno_c_noir", "" }
         };
     };
@@ -126,7 +145,8 @@ class CarShops {
         vehicles[] = {
             { "B_Heli_Light_01_F", "" },
             { "EC635_Unarmed_CSAT", "" },
-            { "O_Heli_Light_02_unarmed_F", "" }
+            { "O_Heli_Light_02_unarmed_F", "" },
+            { "I_Heli_light_03_unarmed_F", "" }
         };
     };
 
@@ -285,16 +305,16 @@ class LifeCfgVehicles {
     };
 
     class O_Truck_03_transport_F {
-        vItemSpace = 285;
-        conditions = "license_civ_trucking";
-        price = 200000;
+        vItemSpace = 450;
+        conditions = "";
+        price = 1500000;
         textures[] = { };
     };
 
     class O_Truck_03_device_F {
-        vItemSpace = 350;
+        vItemSpace = 400;
         conditions = "license_civ_trucking";
-        price = 450000;
+        price = 1000000;
         textures[] = { };
     };
 
@@ -363,7 +383,14 @@ class LifeCfgVehicles {
 
     class O_MRAP_02_F {
         vItemSpace = 60;
-        conditions = "license_civ_driver";
+        conditions = "";
+        price = 1000000;
+        textures[] = { };
+    };
+
+    class O_T_MRAP_02_ghex_F {
+        vItemSpace = 60;
+        conditions = "";
         price = 1000000;
         textures[] = { };
     };
@@ -490,39 +517,23 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
     class I_Truck_02_covered_F {
-        vItemSpace = 250;
-        conditions = "license_civ_trucking";
-        price = 100000;
-        textures[] = {
-            { "Orange", "civ", {
-                "\A3\Soft_F_Beta\Truck_02\data\truck_02_kab_co.paa",
-                "\a3\soft_f_beta\Truck_02\data\truck_02_kuz_co.paa"
-            }, "" },
-            { "Black", "cop", {
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
-            }, "" }
-        };
+        vItemSpace = 325;
+        conditions = "";
+        price = 250000;
+        textures[] = {};
     };
 
     class I_Truck_02_transport_F {
-        vItemSpace = 200;
-        conditions = "license_civ_trucking";
-        price = 75000;
-        textures[] = {
-            { "Orange", "civ", {
-                "\A3\Soft_F_Beta\Truck_02\data\truck_02_kab_co.paa",
-                "\a3\soft_f_beta\Truck_02\data\truck_02_kuz_co.paa"
-            }, "" },
-            { "Black", "cop", {
-                "#(argb,8,8,3)color(0.05,0.05,0.05,1)"
-            }, "" }
-        };
+        vItemSpace = 325;
+        conditions = "";
+        price = 250000;
+        textures[] = {};
     };
 
     class O_Truck_03_covered_F {
-        vItemSpace = 300;
-        conditions = "license_civ_trucking";
-        price = 250000;
+        vItemSpace = 475;
+        conditions = "";
+        price = 1750000;
         textures[] = {};
     };
 
@@ -934,9 +945,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
     class O_Truck_02_Ammo_F {
-        vItemSpace = 180;
+        vItemSpace = 350;
         conditions = "";
-        price = 400000;
+        price = 500000;
         textures[] = {};
     };
 
@@ -1151,30 +1162,37 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
     class DAR_4X4 {
-        vItemSpace = 300;
+        vItemSpace = 500;
         conditions = "";
-        price = 1200000;
+        price = 2000000;
         textures[] = {};
     };
 
     class DAR_MK27 {
-        vItemSpace = 340;
+        vItemSpace = 525;
         conditions = "";
-        price = 1500000;
+        price = 2500000;
+        textures[] = {};
+    };
+
+    class DAR_MK27T {
+        vItemSpace = 550;
+        conditions = "";
+        price = 2750000;
         textures[] = {};
     };
 
     class DAR_MK23 {
-        vItemSpace = 290;
+        vItemSpace = 575;
         conditions = "";
         price = 3000000;
         textures[] = {};
     };
 
-    class DAR_LHS_16O_MRAP_02_F {
-        vItemSpace = 450;
+    class DAR_CHS_16 {
+        vItemSpace = 625;
         conditions = "";
-        price = 3000000;
+        price = 3500000;
         textures[] = {};
     };
 
@@ -1217,6 +1235,104 @@ will modify the virtual space and the price of the vehicle, but other informatio
         vItemSpace = 75;
         conditions = "";
         price = 5000;
+        textures[] = {};
+    };
+
+    class O_T_Quadbike_01_ghex_F {
+        vItemSpace = 25;
+        conditions = "";
+        price = 2500;
+        textures[] = {};
+    };
+
+    class I_Quadbike_01_F {
+        vItemSpace = 25;
+        conditions = "";
+        price = 2500;
+        textures[] = {};
+    };
+
+    class O_Quadbike_01_F {
+        vItemSpace = 25;
+        conditions = "";
+        price = 2500;
+        textures[] = {};
+    };
+
+    class O_T_LSV_02_unarmed_F {
+        vItemSpace = 50;
+        conditions = "";
+        price = 150000;
+        textures[] = {};
+    };
+
+    class O_Truck_02_transport_F {
+        vItemSpace = 325;
+        conditions = "";
+        price = 250000;
+        textures[] = {};
+    };
+
+    class O_Truck_02_covered_F {
+        vItemSpace = 325;
+        conditions = "";
+        price = 250000;
+        textures[] = {};
+    };
+
+    class I_Truck_02_ammo_F {
+        vItemSpace = 350;
+        conditions = "";
+        price = 500000;
+        textures[] = {};
+    };
+
+    class O_T_Truck_03_fuel_ghex_F {
+        vItemSpace = 375;
+        conditions = "";
+        price = 750000;
+        textures[] = {};
+    };
+
+    class O_Truck_03_fuel_F {
+        vItemSpace = 375;
+        conditions = "";
+        price = 750000;
+        textures[] = {};
+    };
+
+    class O_T_Truck_03_device_ghex_F {
+        vItemSpace = 400;
+        conditions = "";
+        price = 1000000;
+        textures[] = {};
+    };
+
+    class O_T_Truck_03_ammo_ghex_F {
+        vItemSpace = 425;
+        conditions = "";
+        price = 1250000;
+        textures[] = {};
+    };
+
+    class O_Truck_03_ammo_F {
+        vItemSpace = 425;
+        conditions = "";
+        price = 1250000;
+        textures[] = {};
+    };
+
+    class O_T_Truck_03_transport_ghex_F {
+        vItemSpace = 450;
+        conditions = "";
+        price = 1500000;
+        textures[] = {};
+    };
+
+    class O_T_Truck_03_covered_ghex_F {
+        vItemSpace = 475;
+        conditions = "";
+        price = 1750000;
         textures[] = {};
     };
 };

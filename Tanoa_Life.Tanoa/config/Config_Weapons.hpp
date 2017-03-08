@@ -47,7 +47,27 @@ class WeaponShops {
         side = "civ";
         conditions = "license_civ_rebel";
         items[] = {
-            { "hlc_rifle_ak74", "", 35000, 5000, "" },
+			//Armes
+            { "hgun_Pistol_Signal_F", "", 2500, 500, "" }, //gun
+            { "hgun_ACPC2_snds_F", "", 4500, 1000, "" },
+            { "hgun_Pistol_heavy_02_F", "", 6000, 1500, "" },
+            { "SMG_01_F", "", 10000, 5000, "" }, //smg
+            { "SMG_02_F", "", 12000, 5000, "" },
+            { "arifle_AKS_F", "", 15000, 5000, "" }, //arifle 5.45
+            { "arifle_Mk20_plain_F", "", 17500, 5000, "" }, //arifle 5.56
+            { "arifle_Mk20_F", "", 17500, 5000, "" },
+            { "arifle_Mk20C_plain_F", "", 17500, 5000, "" },
+            { "arifle_Mk20C_F", "", 17500, 5000, "" },
+            { "arifle_TRG20_F", "", 17500, 5000, "" },
+            { "arifle_TRG21_F", "", 17500, 5000, "" },
+            { "arifle_CTAR_ghex_F", "", 25000, 5000, "" }, //arifle 5.8
+            { "arifle_CTAR_hex_F", "", 25000, 5000, "" },
+            { "arifle_CTAR_blk_F", "", 25000, 5000, "" },
+            { "arifle_Katiba_C_F", "", 30000, 5000, "" }, //arifle 6.5
+            { "arifle_Katiba_F", "", 3, 5000, "" },
+            { "arifle_AK12_F", "", 35000, 5000, "" }, //arifle 7.62
+            { "arifle_AKM_F", "", 35000, 5000, "" },
+            { "hlc_rifle_ak74", "", 35000, 5000, "" }, //arifle HLC
             { "hlc_rifle_aks74", "", 35000, 5000, "" },
             { "hlc_rifle_ak12", "", 35000, 5000, "" },
             { "hlc_rifle_aks74u", "", 35000, 5000, "" },
@@ -55,24 +75,49 @@ class WeaponShops {
             { "hlc_rifle_akm", "", 35000, 5000, "" },
             { "hlc_rifle_akmgl", "", 35000, 5000, "" },
             { "hlc_rifle_rpk", "", 35000, 5000, "" },
-            { "arifle_ARX_ghex_F", "", 35000, 5000, "" },
-            { "arifle_CTAR_ghex_F", "", 35000, 5000, "" },
-            { "arifle_CTARS_ghex_F", "", 65000, 5000, "" },
-            { "srifle_DMR_07_ghex_F", "", 110000, 5000, "" },
-            { "srifle_GM6_ghex_F", "", 200000, 5000, "" },
+            { "srifle_DMR_07_ghex_F", "", 75000, 5000, "" }, //srifle 6.5
+            { "srifle_DMR_07_hex_F", "", 75000, 5000, "" },
+            { "srifle_DMR_07_blk_F", "", 75000, 5000, "" },
+            { "srifle_EBR_F", "", 150000, 5000, "" }, //srifle 7.62
+            { "srifle_DMR_01_F", "", 200000, 5000, "" },
+			//Lunettes
             { "HLC_Optic_PSO1", "", 2500, 625, "" },
             { "HLC_Optic_1p29", "", 2500, 625, "" },
-            { "hlc_optic_kobra", "", 2500, 625, "" },
+            { "optic_Aco", "", 2500, 625, "" },
+            { "optic_ACO_grn", "", 2500, 625, "" },
+            { "optic_Aco_smg", "", 2500, 625, "" },
+            { "optic_ACO_grn_smg", "", 2500, 625, "" },
+            { "optic_Arco", "", 2500, 625, "" },
             { "optic_Arco_ghex_F", "", 2500, 625, "" },
-            { "optic_Hamr", "", 2500, 625, "" },
+            { "optic_Arco_blk_F", "", 2500, 625, "" },
+            { "optic_DMS", "", 2500, 625, "" },
             { "optic_DMS_ghex_F", "", 2500, 625, "" },
+            { "optic_Holosight", "", 2500, 625, "" },
+            { "optic_Holosight_khk_F", "", 2500, 625, "" },
+            { "optic_Holosight_blk_F", "", 2500, 625, "" },
+            { "optic_KHS_tan", "", 2500, 625, "" },
+            { "optic_KHS_hex", "", 2500, 625, "" },
+            { "optic_KHS_blk", "", 2500, 625, "" },
             { "optic_LRPS_ghex_F", "", 2500, 625, "" },
+            { "optic_MRCO", "", 2500, 625, "" },
+			//Silencieux
             { "hlc_muzzle_545SUP_AK", "", 2500, 625, "" },
             { "hlc_muzzle_762SUP_AK", "", 2500, 625, "" },
-            { "muzzle_snds_58_ghex_F", "", 2500, 625, "" },
+            { "hlc_VOG25_AK", "", 2500, 25, "" },
+            { "muzzle_snds_58_blk_F", "", 2500, 625, "" },
+            { "muzzle_snds_58_hex_F", "", 2500, 625, "" },
             { "muzzle_snds_58_wdm_F", "", 2500, 625, "" },
+            { "muzzle_snds_65_TI_blk_F", "", 2500, 625, "" },
+            { "muzzle_snds_65_TI_hex_F", "", 2500, 625, "" },
             { "muzzle_snds_65_TI_ghex_F", "", 2500, 625, "" },
-            { "hlc_VOG25_AK", "", 100, 25, "" },
+            { "muzzle_snds_m_khk_F", "", 2500, 625, "" },
+            { "muzzle_snds_m_snd_F", "", 2500, 625, "" },
+            { "muzzle_snds_L", "", 2500, 625, "" },
+            { "muzzle_snds_acp", "", 2500, 625, "" },
+			//Autres
+            { "O_NVGoggles_ghex_F", "", 2000, 500, "" },
+            { "O_NVGoggles_hex_F", "", 2000, 500, "" },
+            { "O_NVGoggles_urb_F", "", 2000, 500, "" },
             { "hlc_GRD_Red", "", 100, 25, "" },
             { "hlc_GRD_blue", "", 100, 25, "" },
             { "hlc_GRD_green", "", 100, 25, "" },
@@ -96,11 +141,19 @@ class WeaponShops {
             { "hlc_30Rnd_545x39_S_AK", "", 2000, 100, "" },
             { "hlc_60Rnd_545x39_t_rpk", "", 2000, 100, "" },
             { "hlc_30rnd_762x39_s_ak", "", 2000, 100, "" },
-            { "30Rnd_65x39_caseless_green", "", 2000, 100, "" },
-            { "30Rnd_580x42_Mag_F", "", 2000, 100, "" },
-            { "100Rnd_580x42_Mag_F", "", 2000, 100, "" },
+            { "30Rnd_762x39_Mag_Tracer_F", "", 2000, 100, "" },
+            { "30Rnd_545x39_Mag_Tracer_F", "", 2000, 100, "" },
+            { "30Rnd_580x42_Mag_Tracer_F", "", 2000, 100, "" },
+            { "30Rnd_65x39_caseless_green_mag_Tracer", "", 2000, 100, "" },
             { "20Rnd_650x39_Cased_Mag_F", "", 2000, 100, "" },
-            { "5Rnd_127x108_Mag", "", 2000, 100, "" }
+            { "20Rnd_762x51_Mag", "", 2000, 100, "" },
+            { "30Rnd_556x45_Stanag_Tracer_Yellow", "", 2000, 100, "" },
+            { "10Rnd_762x54_Mag", "", 2000, 100, "" },
+            { "30Rnd_9x21_Mag_SMG_02_Tracer_Green", "", 2000, 100, "" },
+            { "30Rnd_45ACP_Mag_SMG_01_Tracer_Red", "", 2000, 100, "" },
+            { "9Rnd_45ACP_Mag", "", 2000, 100, "" },
+            { "6Rnd_RedSignal_F", "", 500, 100, "" },
+            { "6Rnd_45ACP_Cylinder", "", 2000, 100, "" }
         };
         accs[] = {};
     };
